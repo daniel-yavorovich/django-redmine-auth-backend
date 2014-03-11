@@ -7,7 +7,7 @@ A Django authentication backend for use with the Redmine.
 
 Using pip:
 
-    pip install -e git+https://github.com/daniel-yavorovich/django-redmine-auth-backend.git
+    pip install git+https://github.com/daniel-yavorovich/django-redmine-auth-backend.git
 
 Otherwise, download the code any way you like and do:
 
@@ -20,7 +20,7 @@ and REDMINE_URL in Django settings file:
 
     AUTHENTICATION_BACKENDS = (
         'django.contrib.auth.backends.ModelBackend',
-        'redmine_auth.backends.RedditBackend',
+        'redmine_auth.backends.RedmineAuthBackend',
     )
 
     REDMINE_URL = 'https://redmine.example.com'
